@@ -1,27 +1,16 @@
-puts "Tell me your name"
-name =gets.chomp()
-puts "Hi #{name} , my name is code the dream"
+top_end = 100
+count = 0
 
-puts "Tell me a number"
-x = gets.chomp()
-
-puts " great!Tell me another number"
-y =gets.chomp()
-puts "what is 2[x]-[y]*hours of class attended /number of class mates"
-answer=gets.chomp.to_f
-
-#arrays
-games_rock ="nbak19","gta v","call of duty"
-puts games_rock# loops
-
-command = ''
-
-while command != 'bye'
-
-  puts command
-
-  command = gets.chomp
-
-end
-
-puts 'Come again soon!'
+while count <= top_end 
+   if count % 15== 0
+    count += 1
+    puts "bingo"
+    elsif count %5 ==0
+    count += 1
+    puts "king"
+   else
+    p count
+    count += 1
+   end 
+  end 
+     
